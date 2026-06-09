@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.28)
 
 # Define the project name and specify that it uses C++.
-project(ExampleModularProject LANGUAGES CXX)
+project(CountryEngine LANGUAGES CXX)
 
 # Include configuration and flags from separate CMake files for better 
 # organization and maintainability.

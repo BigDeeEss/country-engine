@@ -1,9 +1,9 @@
-# CMakeLists.txt for ExampleModularProject.
+# CMakeLists.txt for CountryEngine.
 
-# Add source files for emplib and specify that they are module files.
-add_library(emplib STATIC)
+# Add source files for celib and specify that they are module files.
+add_library(celib STATIC)
 
-target_sources(emplib
+target_sources(celib
     PUBLIC
     FILE_SET CXX_MODULES FILES
     hello_world.cppm
@@ -11,23 +11,23 @@ target_sources(emplib
 
 # Install the library to the appropriate directory
 install(
-    TARGETS emplib
+    TARGETS celib
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 # Add the main application executable.
-add_executable(emp main.cpp)
+add_executable(ce main.cpp)
 
 # Link emp with all libraries.
-target_link_libraries(emp
+target_link_libraries(ce
     PRIVATE
-    emplib
+    celib
 )
 
 # Install the executable to the appropriate directory
 install(
-    TARGETS emp
+    TARGETS ce
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
