@@ -1,0 +1,2 @@
+$root .
+print_hello_world src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.gcm

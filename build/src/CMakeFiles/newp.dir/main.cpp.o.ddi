@@ -1,0 +1,14 @@
+{
+"rules": [
+{
+"primary-output": "src/CMakeFiles/newp.dir/main.cpp.o",
+"requires": [
+{
+"logical-name": "print_hello_world"
+}
+]
+}
+],
+"version": 0,
+"revision": 0
+}

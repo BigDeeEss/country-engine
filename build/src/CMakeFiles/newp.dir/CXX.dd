@@ -1,0 +1,3 @@
+ninja_dyndep_version = 1.0
+build src/CMakeFiles/newp.dir/main.cpp.o: dyndep | src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.gcm
+

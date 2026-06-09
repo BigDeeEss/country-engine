@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/build",
+  "command": "/usr/bin/c++  -Wall -Wextra -pedantic -fmodules -g -std=c++23 -fmodules-ts -fmodule-mapper=src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.cpp.o -c /home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/src/print_hello_world.cpp",
+  "file": "/home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/src/print_hello_world.cpp",
+  "output": "/home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/build/src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.cpp.o"
+},
+{
+  "directory": "/home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/build",
+  "command": "/usr/bin/c++  -Wall -Wextra -pedantic -fmodules -g -std=c++23 -fmodules-ts -fmodule-mapper=src/CMakeFiles/newp.dir/main.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o src/CMakeFiles/newp.dir/main.cpp.o -c /home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/src/main.cpp",
+  "file": "/home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/src/main.cpp",
+  "output": "/home/damon/Documents/2026/CPP/Microsoft-cpp-programming-essentials/newp/build/src/CMakeFiles/newp.dir/main.cpp.o"
+}
+]

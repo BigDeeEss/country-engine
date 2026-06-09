@@ -1,0 +1,14 @@
+# ninja log v7
+2	14	1781003050136014957	src/CMakeFiles/newp.dir/main.cpp.o.ddi	3b1674d2d3cfab6c
+1	15	1781003050135014957	src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.cpp.o.ddi	b17dd49ec9f50894
+15	27	1781003050160421738	src/CMakeFiles/print_hello_world_lib.dir/CXX.dd	4fc856250966a7b3
+15	27	1781003050160421738	src/CMakeFiles/print_hello_world_lib.dir/CXXModules.json	4fc856250966a7b3
+15	27	1781003050160421738	src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.cpp.o.modmap	4fc856250966a7b3
+27	40	1781003050174205036	src/CMakeFiles/newp.dir/CXX.dd	4fe5680a3dc30276
+27	40	1781003050174205036	src/CMakeFiles/newp.dir/CXXModules.json	4fe5680a3dc30276
+27	40	1781003050174205036	src/CMakeFiles/newp.dir/main.cpp.o.modmap	4fe5680a3dc30276
+27	53	1781003050186014954	src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.cpp.o	564fd5df9450d35f
+27	53	1781003050186014954	src/CMakeFiles/print_hello_world_lib.dir/print_hello_world.gcm	564fd5df9450d35f
+53	77	1781003050188080407	src/CMakeFiles/newp.dir/main.cpp.o	7038f6fcdec6353b
+53	94	1781003050187800939	src/libprint_hello_world_lib.a	c2669feb27022a09
+94	168	1781003050228014952	src/newp	d70470efae29dc55
