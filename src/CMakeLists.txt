@@ -1,0 +1,33 @@
+# CMakeLists.txt for ExampleModularProject.
+
+# Add source files for emplib and specify that they are module files.
+add_library(emplib STATIC)
+
+target_sources(emplib
+    PUBLIC
+    FILE_SET CXX_MODULES FILES
+    hello_world.cppm
+)
+
+# Install the library to the appropriate directory
+install(
+    TARGETS emplib
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+# Add the main application executable.
+add_executable(emp main.cpp)
+
+# Link emp with all libraries.
+target_link_libraries(emp
+    PRIVATE
+    emplib
+)
+
+# Install the executable to the appropriate directory
+install(
+    TARGETS emp
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
