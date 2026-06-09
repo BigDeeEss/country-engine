@@ -1,6 +1,15 @@
 {
-    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
     "C_Cpp.default.cppStandard": "c++23",
     "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
-    "cmake.configureOnOpen": false
+    "C_Cpp.default.compilerPath": "/usr/bin/c++",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "cmake.configureOnOpen": false,
+    "files.exclude": {
+        "**/.cache": true,
+        "**/.git": true,
+        "**/build": true,
+        "**/install": true
+    }
 }

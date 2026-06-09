@@ -1,4 +1,4 @@
-module;
+// Module interface unit using the .cppm convention.
 
 export module hello_world;
 

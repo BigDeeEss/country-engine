@@ -1,11 +1,12 @@
 # CMakeLists.txt for ExampleModularProject.
-add_library(emplib)
 
 # Add source files for emplib and specify that they are module files.
+add_library(emplib STATIC)
+
 target_sources(emplib
     PUBLIC
     FILE_SET CXX_MODULES FILES
-    hello_world.cpp
+    hello_world.cppm
 )
 
 # Install the library to the appropriate directory
