@@ -1,10 +1,13 @@
-# CMakeLists.txt for the newp project, which demonstrates a simple C++ application with modular structure and modern CMake practices.
+# CMakeLists.txt for the root of the project. 
+# This file sets up the project and includes the necessary subdirectories and 
+# configuration files.
 cmake_minimum_required(VERSION 3.28)
 
 # Define the project name and specify that it uses C++.
-project(newp LANGUAGES CXX)
+project(ExampleModularProject LANGUAGES CXX)
 
-# Include configuration and flags from separate CMake files for better organization and maintainability.
+# Include configuration and flags from separate CMake files for better 
+# organization and maintainability.
 include(cmake/config.cmake)
 include(cmake/flags.cmake)
 

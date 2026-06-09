@@ -1,6 +1,6 @@
-import print_hello_world;
+import hello_world;
 
 int main() {
-  print_hello_world();
+  hello_world();
   return 0;
 }

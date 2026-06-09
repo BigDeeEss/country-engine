@@ -1,29 +1,32 @@
-# CMakeLists.txt - Main CMake configuration for the newp project.
-add_library(print_hello_world_lib)
+# CMakeLists.txt for ExampleModularProject.
+add_library(emplib)
 
-# Add the C++ module source file to the library target. The CXX_MODULES option indicates that this is a C++ module interface unit.
-target_sources(print_hello_world_lib
+# Add source files for emplib and specify that they are module files.
+target_sources(emplib
     PUBLIC
     FILE_SET CXX_MODULES FILES
-    print_hello_world.cpp
+    hello_world.cpp
 )
 
+# Install the library to the appropriate directory
 install(
-    TARGETS print_hello_world_lib
+    TARGETS emplib
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-add_executable(newp main.cpp)
+# Add the main application executable.
+add_executable(emp main.cpp)
 
-target_link_libraries(newp
+# Link emp with all libraries.
+target_link_libraries(emp
     PRIVATE
-    print_hello_world_lib
+    emplib
 )
 
 # Install the executable to the appropriate directory
 install(
-    TARGETS newp
+    TARGETS emp
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
