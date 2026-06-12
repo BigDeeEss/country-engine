@@ -6,8 +6,8 @@ add_executable(countryenginetests.x main.cpp)
 # Add source files for the test executable and specify that they are private files.
 target_sources(countryenginetests.x
     PRIVATE
-    # FILE_SET CXX_MODULES FILES
-    utils/logger_test.cpp
+    FILE_SET CXX_MODULES FILES
+    utils/logger_test.cppm
 )
 
 # Link the test executable with the countryengine library and Google Test. framework.

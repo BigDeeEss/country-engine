@@ -1,3 +1,8 @@
+/// @file logger_test.cppm
+/// @brief Unit tests for the Logger class in the Country Engine application.
+
+module;
+
 // import logger;
 
 // #include <gtest/gtest.h>
@@ -7,6 +12,10 @@
 // #include <functional>
 // #include <iostream>
 // #include <sstream>
+
+import logger;
+
+export module logger.test;
 
 // namespace fs = std::filesystem;
 // using CountryEngine::Utills::Logger;
