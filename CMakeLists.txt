@@ -10,6 +10,7 @@ project(CountryEngine LANGUAGES CXX)
 # organization and maintainability.
 include(cmake/config.cmake)
 include(cmake/flags.cmake)
+include(cmake/dependencies.cmake)
 
 # Add the src directory, which contains the main application and its library.
 add_subdirectory(src)
