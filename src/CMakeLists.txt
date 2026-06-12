@@ -14,8 +14,8 @@ target_sources(countryengine
 # Link countryengine library.
 target_link_libraries(countryengine
     PRIVATE
-    yaml-cpp::yaml-cpp
-    ryml::ryml
+    # yaml-cpp::yaml-cpp
+    # ryml::ryml
 )
 
 # Install the library to the appropriate directory

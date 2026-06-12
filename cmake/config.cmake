@@ -13,9 +13,9 @@ include(GNUInstallDirs)
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/install)
 
 # Check the build type and print a message accordingly.
-if (CMAKE_BUILD_TYPE STREQUAL "Debug")
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     message(STATUS "[${PROJECT_NAME}] Configuring for Debug build.")
-elseif (CMAKE_BUILD_TYPE STREQUAL "Release")
+elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
     message(STATUS "[${PROJECT_NAME}] Configuring for Release build.")
 else()
     message(STATUS "[${PROJECT_NAME}] Unknown CMAKE_BUILD_TYPE. Defaulting to Debug.")

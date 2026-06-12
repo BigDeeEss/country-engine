@@ -1,13 +1,14 @@
 import hello_world;
-import ce.logger;
+// import logger;
 
 #include <iostream>
-#include <string>
-#include <yaml-cpp/yaml.h>
+// #include <string>
+// import std;
+// #include <yaml-cpp/yaml.h>
 
-YAML::Node loadYamlFile(const std::string &filePath) {
-  return YAML::LoadFile(filePath);
-}
+// YAML::Node loadYamlFile(const std::string &filePath) {
+//   return YAML::LoadFile(filePath);
+// }
 
 int main(int argc, char *argv[]) {
   std::string filePath;
@@ -23,16 +24,16 @@ int main(int argc, char *argv[]) {
   // which is imported by the hello_world module.
   // load_country_data();
 
-  YAML::Node root = loadYamlFile(filePath);
-  if (!root) {
-    std::cerr << "Failed to load YAML file: " << filePath << "\n";
-    return 1;
-  }
+  // YAML::Node root = loadYamlFile(filePath);
+  // if (!root) {
+  //   std::cerr << "Failed to load YAML file: " << filePath << "\n";
+  //   return 1;
+  // }
 
-  // Example: access values
-  if (root["name"]) {
-    std::cout << "name: " << root["name"].as<std::string>() << "\n";
-  }
+  // // Example: access values
+  // if (root["name"]) {
+  //   std::cout << "name: " << root["name"].as<std::string>() << "\n";
+  // }
 
   return 0;
 }
