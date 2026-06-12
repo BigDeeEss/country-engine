@@ -21,6 +21,10 @@ using Logger = CountryEngine::Utills::Logger;
 
 int main([[maybe_unused]] int argc, [[maybe_unused]] char *argv[]) {
 
+    Logger::init("/home/damon/Documents/2026/CPP/"
+                 "Microsoft-cpp-programming-essentials/country-engine/app.log",
+        true); // Initialize logger with file output
+
     if (argc != 2) {
 
         Logger::log(

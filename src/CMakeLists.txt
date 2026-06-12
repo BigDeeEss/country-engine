@@ -7,8 +7,6 @@ target_sources(countryengine
     FILE_SET CXX_MODULES FILES
     hello_world.cppm
     utils/logger.cppm
-    PRIVATE
-    utils/logger.cpp
 )
 
 # Link countryengine library.
