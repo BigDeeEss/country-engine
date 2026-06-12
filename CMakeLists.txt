@@ -8,9 +8,18 @@ project(CountryEngine LANGUAGES CXX)
 
 # Include depoendencies, configuration settings and flags from separate CMake 
 # files for better organization and maintainability.
-include(cmake/dependencies.cmake)
 include(cmake/config.cmake)
+include(cmake/dependencies.cmake)
 include(cmake/flags.cmake)
 
 # Add the src directory, which contains the main application and its library.
 add_subdirectory(src)
+
+# Add the tests directory, which contains unit tests for the project.
+add_subdirectory(tests)
+
+# Add test targets when available.
+if(${GTEST_FOUND})
+    enable_testing()
+    add_subdirectory(tests)
+endif()
