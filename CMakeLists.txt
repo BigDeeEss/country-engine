@@ -15,9 +15,6 @@ include(cmake/flags.cmake)
 # Add the src directory, which contains the main application and its library.
 add_subdirectory(src)
 
-# Add the tests directory, which contains unit tests for the project.
-add_subdirectory(tests)
-
 # Add test targets when available.
 if(${GTEST_FOUND})
     enable_testing()
