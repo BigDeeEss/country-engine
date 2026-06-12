@@ -9,6 +9,7 @@
     "files.exclude": {
         "**/.cache": true,
         "**/.git": true,
+        "**/app.log": true,
         "**/build": true,
         "**/install": true
     }
